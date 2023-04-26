@@ -24,6 +24,17 @@ async def start_bot(Client):
                 BotCommand("gn", "Spam The Chat With Good Night Message"),
                 BotCommand("raid", "Spam The Chat With Raid"),
                 BotCommand("rraid", "Start The Raid in Chat By Replying to person"),
+                BotCommand("draid", "Stop The Raid in Chat"),
+                BotCommand("listraid", "Check the list on started raid on it"),
+                BotCommand("shayri", "Spam in chat with shayri"),
+                BotCommand("stop", "To stop unlimited spam/raid/abuse"),
+                ButCommand("dspam", "Start the chat with delay spam"),
+                BotCommand("pspam", "Pornspam with raid"),
+                BotCommand("hang", "Start hang command used to hang the chat"),
+                BotCommand("uspam", "Start the Spam till used command stoo"),
+                BotCommand("uraid", "Start the unlimited raid"),
+                BotCommand("abuse", "Start abusing non stop"),
+                BotComment("echo", "echo the reply msg"),
      
             ]
         )
