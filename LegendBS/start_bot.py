@@ -16,7 +16,7 @@ async def start_bot(Client):
         curr_time = datetime.now()
         print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
         print(f"Current Time = {curr_time}")
-        print(f"Hello Sir You Get Flood Wait Of {e.value}"
+        print(f"Hello Sir You Get Flood Wait Of {e.value}")
         print(f"The Bot Will Automatically Get Started At Time = curr_time + timedelta(seconds = {e.value})")
         print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
         await asyncio.sleep(e.value)
