@@ -1,14 +1,17 @@
 from pyrogram.types import BotCommand
+from datetime import datetime, timedelta
+import asyncio
+from pyrogram.errors import FloodWait
 
 
 async def start_bot(Client):
     await Client.start()
     try:
         x = await Client.get_me()
-        print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
+        print("➖➖➖➖❤️ BOT INFO ❤️➖➖➖➖")
         print(f"Bot Name = {x.first_name} {x.last_name}")
         print(f"Bot Username = @{x.username} get started")
-        print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
+        print("➖➖➖➖➖❤️❤️❤️❤️❤️➖➖➖➖➖")
     except FloodWait as e:
         curr_time = datetime.now()
         print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
