@@ -8,22 +8,22 @@ async def start_bot(Client):
     await Client.start()
     try:
         x = await Client.get_me()
-        print("➖➖➖➖❤️ BOT INFO ❤️➖➖➖➖")
-        print(f"Bot Name = {x.first_name} {x.last_name}")
-        print(f"Bot Username = @{x.username} get started")
+        print("➖➖➖➖❤️ Bᴏᴛ Iɴғᴏ ❤️➖➖➖➖")
+        print(f"Bot Nᴀᴍᴇ = {x.first_name} {x.last_name}")
+        print(f"Bot Usᴇʀɴᴀᴍᴇ = @{x.username} ɢᴇᴛ sᴛᴀʀᴛᴇᴅ")
         print("➖➖➖➖➖❤️❤️❤️❤️❤️➖➖➖➖➖")
     except FloodWait as e:
         curr_time = datetime.now()
         print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
-        print(f"Current Time = {curr_time}")
-        print(f"Hello Sir You Get Flood Wait Of {e.value}")
-        print(f"The Bot Will Automatically Get Started At Time = curr_time + timedelta(seconds = {e.value})")
+        print(f"Cᴜʀʀᴇɴᴛ Tɪᴍᴇ = {curr_time}")
+        print(f"Hᴇʟʟᴏ Sɪʀ Yᴏᴜ Gᴇᴛ Fʟᴏᴏᴅ Wᴀɪᴛ Fᴏʀ {e.value}")
+        print(f"Tʜᴇ Bᴏᴛ Wɪʟʟ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Gᴇᴛ Sᴛᴀʀᴛᴇᴅ Aᴛ Tɪᴍᴇ = curr_time + timedelta(seconds = {e.value})")
         print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
         await asyncio.sleep(e.value)
     except Exception as e:
         print(e)
     try:
-        print("Settings All Commands")
+        print("Sᴇᴛᴛɪɴɢ Aᴀʟʟ Cᴏᴍᴍᴀɴᴅs")
         await Client.set_bot_commands(
             [
                 BotCommand("start", "Start Bot By Anyone"),
