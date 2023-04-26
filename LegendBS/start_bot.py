@@ -5,7 +5,10 @@ async def start_bot(Client):
     await Client.start()
     try:
         x = await Client.get_me()
-        print(f"Client - [INFO]: @{x.username} get started ")
+        print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
+        print(f"Bot Name = {x.first_name} {x.last_name}")
+        print(f"Bot Username = @{x.username} get started")
+        print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
     except Exception as e:
         print(f"Error - {e}")
     try:
@@ -34,8 +37,7 @@ async def start_bot(Client):
                 BotCommand("uspam", "Start the Spam till used command stoo"),
                 BotCommand("uraid", "Start the unlimited raid"),
                 BotCommand("abuse", "Start abusing non stop"),
-                BotComment("echo", "echo the reply msg"),
-     
+                BotComment("echo", "echo the reply msg")  
             ]
         )
     except:
