@@ -1,8 +1,8 @@
 async def start_banall(Legend, message):
     chat = message.chat
-    a = await Legend.get_chat_member(chat.id, 'me')
-    if a.status != "administrator":
-        return await Legend.send_message(chat.id, "Promote me to admin😭")
+    # a = await Legend.get_chat_member(chat.id, 'me')
+    # if a.status != "administrator":
+    #     return await Legend.send_message(chat.id, "Promote me to admin😭")
     x = await Legend.send_message(chat.id, "Hey it's Legend Bot Spam")
     done = 0
     failed = 0
