@@ -17,6 +17,8 @@ async def start_bot(Client):
         print(f"The Bot Will Automatically Get Started At Time = curr_time + timedelta(seconds = {e.value})")
         print("➖➖➖➖➖➖➖➖➖➖➖➖➖")
         await asyncio.sleep(e.value)
+    except Exception as e:
+        print(e)
     try:
         print("Settings All Commands")
         await Client.set_bot_commands(
